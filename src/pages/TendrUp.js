@@ -15,6 +15,36 @@ function DoSomethin(a) {
      return alert(a)
   }
 
+  // ASYNCHRONOUS FUNCTION THAT CAN BE CALLED TO GET DATA FROM BACKEND THEN WE GET SOME SHIT DONE YEAHHHHHHHHHHHHHHH
+  // async function UpdateDeliv(status, id) {
+  //   fetch('http://localhost:5000/deliva',{
+  //     method: 'PUT',
+  //     body:JSON.stringify({
+  //         id:id,
+  //       status:status
+  //     }),
+  //     headers:{
+  //         "Content-type": "application/json; charset=UTF-8"
+  //     }
+  // }).then(response => response.json())
+  // .then(message => {
+  //     alert(message)
+  // })
+  //  }
+
+
+  // USEEFFECT FOR LOADING DATA FROM AN API AT INITIATION OF THE PAGE . TO GET DATA POSSIBLY FOR INITIAL DROPDOWNS
+//   useEffect(()=>{
+//     fetch("http://localhost:5000/delivery/" + status.stats).then(
+//         res => res.json()
+//     ).then(
+//         data=> {
+//             stplayers(data)
+//             console.log(data)
+//         }
+//     )
+// },[])
+
 
 function TendrUp() {
     const data = {

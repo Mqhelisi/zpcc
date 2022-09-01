@@ -8,6 +8,13 @@ export const StyledButton = styled.button`
     background-color: ${props => props.bg === "black" ? "black":"blue"}
 `;
 
+export const OneLineCont = styled.section`
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
 export const StyledContainer = styled.section.attrs((props) => ({
     width: props.width || "100%",
     hasPadding: props.hasPadding || false,
@@ -20,8 +27,8 @@ export const StyledContainer = styled.section.attrs((props) => ({
 
 export const StyledContainer2 = styled.section`
   width:100%;
-  padding: 0 20px ;
-  margin: 0 auto 10px 10px;
+  padding: 20px 20px 20px 20px;
+  margin: 0 0 0 0;
   background-color: ${props => props.bg === "black" ? "black":props.bg}
   
 `;

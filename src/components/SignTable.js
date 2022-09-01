@@ -20,28 +20,7 @@ function SignTable(props) {
         // pagination={paginationFactory()}
         // rowEvents={props.rowEvents}
         />
-    // <Table striped bordered hover variant="dark">
-    //   <thead>
-    //     <tr>
-    //       <th>Signatory</th>
-    //       <th>Position</th>
-    //       <th>Signed?</th>
-    //     </tr>
-    //   </thead>
-    //   <tbody>
-    //   {products.map((product, index) => {
-    //                 return (
-    //                     <tr key = {product.id}>
-    //                     <td>{product.signatory}</td>
-    //                     <td>{product.position}</td>
-    //                     <td>{product.signed}</td>
-              
-    //                   </tr>
-    //                 )
-    //             })}
-      
-    //   </tbody>
-    // </Table>
+
   );
 }
 

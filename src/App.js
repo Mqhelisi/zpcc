@@ -1,47 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
-import {Route, Switch} from "react-router";
-import Home from './components/Home';
-import Contact from './components/Contact';
-import {StyledButton, StyledSmallContainer} from './stylez'
-import TenderV from './pages/TenderV';
+import BasicNavbar from './components/Navbar';
+import BasicExample from './components/BasicForm';
+import AddProj from './pages/AddProj';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NoPage from './pages/NoPage';
+import Home from './pages/HomePr'
+// import NumberList from './components/Listers'
+import HomeTnd from './pages/HomeTnd';
+import AddTnd from './pages/AddTnd';
 import TendrUp from './pages/TendrUp';
-// let routes = (
-//   <Switch>
-//     <Route exact path='/'>
-//       <Home/>
-//     </Route>
-//     <Route exact path='/ab'>
-//       <About/>
-//     </Route>
-//     <Route>
-//       <NoMatch/>
-//     </Route>
-//   </Switch>
-// )
-
-function DoSomethin(a) {
-  console.log('asdlnasndkasdklasmdlksamdlksamdklsamdklsam')
-  return alert(a)
-}
-
-
+import TenderV from './pages/TenderV';
 
 
 function App() {
   return (
     <>
-    <TendrUp/>
+    <BasicNavbar/>
 
+<BrowserRouter>
+      <Routes>
+        
+          <Route path="/home" element={<Home/>} />
+          <Route path="/homet" element={<HomeTnd/>} />
+          <Route path="/tndrup" element={<TendrUp/>}/>
+          <Route path="/addp" element={<AddProj />} />
+          <Route path="/addt" element={<AddTnd />} />
+          <Route path="/viewt" element={<TenderV />} />
+
+
+          <Route path="*" element={<NoPage />} />
+     
+      </Routes>
+    </BrowserRouter>
+    
     </>
-//     <div className="App-header">
-// <Home />
-//       <Contact/>
-//       <StyledButton bg = "black" type="button" onClick={()=> DoSomethin('somebajdksnjkndkjaddasnsadnksan')}>Login</StyledButton>
-//       <StyledButton bg = "white" type="button" onClick={()=> DoSomethin('somen else')}>lovejoy msmsmsms</StyledButton>
-   
 
-//     </div>
   );
 }
 
